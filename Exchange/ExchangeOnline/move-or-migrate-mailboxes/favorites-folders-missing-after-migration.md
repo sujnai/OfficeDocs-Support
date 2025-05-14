@@ -85,13 +85,19 @@ Follow these steps:
 
 11. For each folder that doesn't appear in the Favorites list, perform the following steps:
 
-    1. Double-click the folder name in the **PR_SUBJECT** column to open the **Properties** window for the folder.
+    a. Double-click the folder name in the **PR_SUBJECT** column to open the **Properties** window for the folder.
 
-    2. Double-click the **PR_WLINK_STORE_ENTRYID** entry in the **Name** column to open the **Property Editor** window.
+    b. Double-click the **PR_WLINK_STORE_ENTRYID** entry in the **Name** column to open the **Property Editor** window.
 
-    3. In the **Smart View** section, select the **EntryID** \> **MAPI Message Store Entry ID** \> **MailboxDN** field. The field value corresponds to the `LegacyExchangeDN` value of the on-premises mailbox prior to migration.
+    c. In the **Smart View** section, select the **EntryID** \> **MAPI Message Store Entry ID** \> **MailboxDN** field. The field value corresponds to the `LegacyExchangeDN` value of the on-premises mailbox prior to migration.
 
-    4. In the **Text** section, update the **MailboxDN value** to match the current `LegacyExchangeDN` value of the mailbox that you obtained in Step 2.
+    d. Identify a Favorite folder that is visible in the new Outlook profile and follow same step a, b and c.
+
+    e. Copy entire data from **Binary** section of a working folder. 
+       
+    f. In the **Binary** section of an Favorite that is missing from Outlook view in new profile, paste **Binary** data obtained in Step e.
+
+**Note:** In case none of the Favorite folders are visible in new outlook profile, add a folder to favorite, to use it as a sample to get the correct binary data inorder to fix affected Favorite folders.
 
 12. Close all MFCMAPI windows to exit the application.
 
